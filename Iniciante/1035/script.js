@@ -1,17 +1,13 @@
 const input = require('fs').readFileSync('stdin', 'utf-8');
-let valores = input.split("\n");
+let valores = input.split(" ");
 
-let a = parseInt(valores.shift());
-let b = parseInt(valores.shift());
-let c = parseInt(valores.shift());
-let d = parseInt(valores.shift());
+let a = Number.parseInt(valores.shift());
+let b = Number.parseInt(valores.shift());
+let c = Number.parseInt(valores.shift());
+let d = Number.parseInt(valores.shift());
 
-if(c > 0 && d > 0 && a % 2 == 0){
-
-    if(b > c && d > a && (c + d > a + b)){
-        console.log(`Valores aceitos`);
-    }
-}
-else{
+if(b > c && d > a && a % 2 === 0 && c + d > a +b){
+    console.log(`Valores aceitos`); 
+} else{
     console.log(`Valores nao aceitos`);
 }
