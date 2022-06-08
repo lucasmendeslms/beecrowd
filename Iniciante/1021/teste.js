@@ -21,6 +21,7 @@ cedulas.forEach(function(_notas, i){
 console.log(`Valor da variável trocoNotas: ${trocoNotas}`)
 console.log(`Valor da variável trocoMoedas: ${trocoMoedas}`)
 trocoMoedas = +(trocoMoedas + trocoNotas).toFixed(2)
+
 console.log(`Valor da variável trocoMoedas após atualizar: ${trocoMoedas}`)
 
 console.log('MOEDAS:')
